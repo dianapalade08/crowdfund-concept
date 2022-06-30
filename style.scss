@@ -1,0 +1,474 @@
+@import "_variables";
+@import "mixins.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: $fontName;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+html,
+body {
+    height: 100%;
+    font-family: $fontName;
+    background-color: $siteBackgroundColor;
+    text-align: center;
+}
+
+.first-section {
+    @include dimensions;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: $mainColor;
+    margin-top: 2%;
+    margin-left: 5%;
+    letter-spacing: 1px;
+}
+
+.second-section {
+    @include section;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 300px;
+    background-color: $mainColor;
+    text-align: center;
+    margin-top: -90px;
+}
+
+.logo-letter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 76px;
+    height: 76px;
+    border: 5px solid;
+    border-radius: 50%;
+    margin-top: -38px;
+    text-align: center;
+    background-image: url('./images/letter-logo.png');
+    background-size: cover;
+}
+
+.text-under-logo {
+    width: auto;
+    color: $textColor;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.span-one {
+    font-size: 28px;
+    color: $textColor;
+    font-weight: 800;
+}
+
+.span-two {
+    font-size: 19px;
+    color: $textColor;
+    opacity: 60%;
+    font-weight: 500;
+}
+
+.primary-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary-buttons a {
+    text-decoration: none;
+    color: $mainColor;
+}
+
+.button-back {
+    @include buttons;
+    background-color: $buttonColor;
+    padding-top: 13px;
+
+    &:hover {
+        background-color: $navbarColor;
+        transition: background-color 0.5s ease;
+    }
+}
+
+.bookmark {
+    @include buttons;
+    background-color: $grayButtonColor;
+    cursor: pointer;
+    color: $textColor;
+    display: flex;
+
+    &:hover {
+        background-color: $navbarColor;
+        transition: all 0.5s ease;
+        color: $mainColor;
+
+        .bookmark-icon {
+            height: 50px;
+            width: 50px;
+            background-color: $mainColor;
+            transition: all 0.5s ease;
+            border-radius: 50px;
+            text-align: center;
+            color: $textColor;
+            padding-top: 13px;
+        }
+    }
+}
+
+.bookmark-icon {
+    height: 50px;
+    width: 50px;
+    background-color: $textColor;
+    border-radius: 50px;
+    text-align: center;
+    color: $mainColor;
+    padding-top: 13px;
+    transition: all 0.5s ease;
+}
+
+.bookmark-label {
+    padding-top: 13px;
+    flex: auto;
+}
+
+.third-section {
+    @include section;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 250px;
+    background-color: $mainColor;
+    margin-top: 30px;
+
+    .third-section-texts {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .third-section-texts-col {
+            color: $textColor;
+
+            .number-span-primary {
+                font-size: 200%;
+                opacity: 90%;
+                font-weight: 800;
+            }
+
+            .number-span-secondary {
+                font-size: 80%;
+                opacity: 70%;
+                font-weight: 500;
+            }
+        }
+
+        .space-line {
+            width: 0.5%;
+            height: 50%;
+            border-radius: 5px;
+            background-color: $grayButtonColor;
+        }
+    }
+
+    .progress-bar-row {
+        width: 90%;
+        margin: auto;
+
+        .progress-bar {
+
+            background: linear-gradient(to right, $buttonColor 0%, $buttonColor 85%, $grayButtonColor 85%);
+            border-radius: 50px;
+        }
+    }
+}
+
+
+
+.fourth-section {
+    @include section;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    background-color: $mainColor;
+    margin-top: 30px;
+
+    .about-project-side {
+        width: 100%;
+        height: auto;
+        text-align: justify;
+
+        .title-about-project {
+            font-size: 100%;
+            font-weight: 900;
+            color: $textColor;
+        }
+
+        .content-about-project {
+            font-size: 80%;
+            font-weight: 700;
+            opacity: 70%;
+        }
+
+        .card {
+            width: 100%;
+            height: 250px;
+            border: 2px solid $grayButtonColor;
+            border-radius: 5px;
+            color: $textColor;
+            padding: 3%;
+            display: inline-grid;
+
+            &.card-disabled {
+                pointer-events: none;
+                opacity: 0.5;
+
+                .card-bottom {
+                    button {
+                        border: 1px solid $navbarColor;
+                        background-color: $navbarColor;
+                    }
+                }
+            }
+
+            .card-header {
+                .card-title {
+                    font-size: 100%;
+                    font-weight: 900;
+                    color: $textColor;
+                }
+
+                a {
+                    font-size: 95%;
+                    color: $buttonColor;
+                    font-weight: lighter;
+                    text-decoration: none;
+                }
+            }
+
+            .card-bottom {
+
+                .card-quantity {
+                    font-size: 100%;
+                    font-weight: 900;
+                    color: $textColor;
+
+                    :last-child {
+                        font-size: 60%;
+                        color: $textColor;
+                        opacity: 0.6;
+                        vertical-align: middle;
+                    }
+                }
+
+                button {
+                    font-size: 95%;
+                    background-color: $buttonColor;
+                    border-radius: 50px;
+                    border: 1px solid $buttonColor;
+                    font-weight: lighter;
+                    text-decoration: none;
+                    color: $mainColor;
+                    font-weight: 600;
+                }
+            }
+
+            .card-content {
+                color: $textColor;
+                opacity: 0.6;
+                font-size: 85%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .first-section {
+        background-image: url(./images/image-hero-desktop.jpg);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-right: 5%;
+        margin-top: 2%;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: $mainColor;
+        font-size: 15px;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-links li a:hover {
+        color: $mainColor;
+        background-color: $navbarColor;
+        transition: background-color 0.5s ease;
+    }
+
+    .primary-buttons {
+        margin-top: 5%;
+
+        .button-back {
+            margin-left: 20%;
+        }
+
+        .bookmark {
+            margin-right: 20%;
+        }
+    }
+
+    .third-section {
+
+        .third-section-texts {
+
+            .third-section-texts-col {
+                margin: auto;
+            }
+
+            .space-line {
+                margin: auto 0 auto 0;
+            }
+        }
+    }
+
+    .fourth-section {
+        padding: 50px;
+
+        .about-project-side {
+            margin-top: 2%;
+            padding: 2%;
+        }
+
+        .card {
+            margin-bottom: 5%;
+            @include card-row-desktop;
+
+            .card-bottom {
+                .card-quantity {
+                    padding-top: 20px;
+                }
+
+                button {
+                    width: 20%;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .first-section {
+        background-image: url(./images/image-hero-mobile.jpg);
+    }
+
+    .second-section {
+        width: 80%;
+        margin-top: -150px;
+    }
+
+    .burger-menu {
+        color: $mainColor;
+        margin-top: 4%;
+        margin-right: 5%;
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .primary-buttons {
+        margin-top: 7%;
+
+        .button-back {
+            width: 300px;
+        }
+
+        .bookmark {
+            width: 50px;
+
+            .bookmark-label {
+                display: none;
+            }
+        }
+    }
+
+    .text-under-logo {
+        padding-top: 20px;
+    }
+
+    .third-section {
+        width: 80%;
+        height: 500px;
+
+        .third-section-texts {
+            .third-section-texts-col {
+                flex: 100%;
+
+                &:first-child {
+                    margin-top: 20px;
+                }
+            }
+
+            .space-line {
+                height: 20%;
+                transform: rotate(90deg);
+                margin-left: 50%;
+            }
+        }
+
+        .progress-bar-row {
+            margin-top: 30px;
+        }
+    }
+
+
+    .fourth-section {
+        width: 80%;
+        padding: 50px;
+
+        .about-project-side {
+            margin-top: 2%;
+            padding: 2%;
+
+            .card {
+                height: 300px;
+                margin-bottom: 5%;
+                padding: 7%;
+                @include card-row-mobile;
+
+                .card-bottom {
+
+                    button {
+                        margin-right: 30%;
+                        margin-top: 5px;
+                        height: 40px;
+                    }
+                }
+
+                .card-content {
+                    margin-top: 10px;
+                }
+
+            }
+        }
+    }
+}

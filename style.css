@@ -1,0 +1,493 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins-Medium";
+  background-color: #F4F4F2;
+  text-align: center;
+}
+
+.first-section {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  color: #ffffff;
+  margin-top: 2%;
+  margin-left: 5%;
+  letter-spacing: 1px;
+}
+
+.second-section {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 300px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: -90px;
+}
+
+.logo-letter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 76px;
+  height: 76px;
+  border: 5px solid;
+  border-radius: 50%;
+  margin-top: -38px;
+  text-align: center;
+  background-image: url("./images/letter-logo.png");
+  background-size: cover;
+}
+
+.text-under-logo {
+  width: auto;
+  color: #000000;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.span-one {
+  font-size: 28px;
+  color: #000000;
+  font-weight: 800;
+}
+
+.span-two {
+  font-size: 19px;
+  color: #000000;
+  opacity: 60%;
+  font-weight: 500;
+}
+
+.primary-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.primary-buttons a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button-back {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #3BB3AB;
+  padding-top: 13px;
+}
+
+.button-back:hover {
+  background-color: #767779;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.bookmark {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #e7e7e7;
+  cursor: pointer;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bookmark:hover {
+  background-color: #767779;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #ffffff;
+}
+
+.bookmark:hover .bookmark-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 50px;
+  text-align: center;
+  color: #000000;
+  padding-top: 13px;
+}
+
+.bookmark-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #000000;
+  border-radius: 50px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 13px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.bookmark-label {
+  padding-top: 13px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.third-section {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 250px;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
+.third-section .third-section-texts {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.third-section .third-section-texts .third-section-texts-col {
+  color: #000000;
+}
+
+.third-section .third-section-texts .third-section-texts-col .number-span-primary {
+  font-size: 200%;
+  opacity: 90%;
+  font-weight: 800;
+}
+
+.third-section .third-section-texts .third-section-texts-col .number-span-secondary {
+  font-size: 80%;
+  opacity: 70%;
+  font-weight: 500;
+}
+
+.third-section .third-section-texts .space-line {
+  width: 0.5%;
+  height: 50%;
+  border-radius: 5px;
+  background-color: #e7e7e7;
+}
+
+.third-section .progress-bar-row {
+  width: 90%;
+  margin: auto;
+}
+
+.third-section .progress-bar-row .progress-bar {
+  background: -webkit-gradient(linear, left top, right top, from(#3BB3AB), color-stop(85%, #3BB3AB), color-stop(85%, #e7e7e7));
+  background: linear-gradient(to right, #3BB3AB 0%, #3BB3AB 85%, #e7e7e7 85%);
+  border-radius: 50px;
+}
+
+.fourth-section {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+
+.fourth-section .about-project-side {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+
+.fourth-section .about-project-side .title-about-project {
+  font-size: 100%;
+  font-weight: 900;
+  color: #000000;
+}
+
+.fourth-section .about-project-side .content-about-project {
+  font-size: 80%;
+  font-weight: 700;
+  opacity: 70%;
+}
+
+.fourth-section .about-project-side .card {
+  width: 100%;
+  height: 250px;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  color: #000000;
+  padding: 3%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.fourth-section .about-project-side .card.card-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.fourth-section .about-project-side .card.card-disabled .card-bottom button {
+  border: 1px solid #767779;
+  background-color: #767779;
+}
+
+.fourth-section .about-project-side .card .card-header .card-title {
+  font-size: 100%;
+  font-weight: 900;
+  color: #000000;
+}
+
+.fourth-section .about-project-side .card .card-header a {
+  font-size: 95%;
+  color: #3BB3AB;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.fourth-section .about-project-side .card .card-bottom .card-quantity {
+  font-size: 100%;
+  font-weight: 900;
+  color: #000000;
+}
+
+.fourth-section .about-project-side .card .card-bottom .card-quantity :last-child {
+  font-size: 60%;
+  color: #000000;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+.fourth-section .about-project-side .card .card-bottom button {
+  font-size: 95%;
+  background-color: #3BB3AB;
+  border-radius: 50px;
+  border: 1px solid #3BB3AB;
+  font-weight: lighter;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.fourth-section .about-project-side .card .card-content {
+  color: #000000;
+  opacity: 0.6;
+  font-size: 85%;
+}
+
+@media only screen and (max-width: 1920px) {
+  .first-section {
+    background-image: url(./images/image-hero-desktop.jpg);
+  }
+  .burger-menu {
+    display: none;
+  }
+  .nav-links {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 5%;
+    margin-top: 2%;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .nav-links li a:hover {
+    color: #ffffff;
+    background-color: #767779;
+    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+  }
+  .primary-buttons {
+    margin-top: 5%;
+  }
+  .primary-buttons .button-back {
+    margin-left: 20%;
+  }
+  .primary-buttons .bookmark {
+    margin-right: 20%;
+  }
+  .third-section .third-section-texts .third-section-texts-col {
+    margin: auto;
+  }
+  .third-section .third-section-texts .space-line {
+    margin: auto 0 auto 0;
+  }
+  .fourth-section {
+    padding: 50px;
+  }
+  .fourth-section .about-project-side {
+    margin-top: 2%;
+    padding: 2%;
+  }
+  .fourth-section .card {
+    margin-bottom: 5%;
+  }
+  .fourth-section .card .card-inline {
+    display: inline;
+  }
+  .fourth-section .card .card-inline .card-first-element {
+    float: left;
+  }
+  .fourth-section .card .card-inline .card-second-element {
+    float: right;
+  }
+  .fourth-section .card .card-bottom .card-quantity {
+    padding-top: 20px;
+  }
+  .fourth-section .card .card-bottom button {
+    width: 20%;
+    height: 55px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .first-section {
+    background-image: url(./images/image-hero-mobile.jpg);
+  }
+  .second-section {
+    width: 80%;
+    margin-top: -150px;
+  }
+  .burger-menu {
+    color: #ffffff;
+    margin-top: 4%;
+    margin-right: 5%;
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .primary-buttons {
+    margin-top: 7%;
+  }
+  .primary-buttons .button-back {
+    width: 300px;
+  }
+  .primary-buttons .bookmark {
+    width: 50px;
+  }
+  .primary-buttons .bookmark .bookmark-label {
+    display: none;
+  }
+  .text-under-logo {
+    padding-top: 20px;
+  }
+  .third-section {
+    width: 80%;
+    height: 500px;
+  }
+  .third-section .third-section-texts .third-section-texts-col {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .third-section .third-section-texts .third-section-texts-col:first-child {
+    margin-top: 20px;
+  }
+  .third-section .third-section-texts .space-line {
+    height: 20%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-left: 50%;
+  }
+  .third-section .progress-bar-row {
+    margin-top: 30px;
+  }
+  .fourth-section {
+    width: 80%;
+    padding: 50px;
+  }
+  .fourth-section .about-project-side {
+    margin-top: 2%;
+    padding: 2%;
+  }
+  .fourth-section .about-project-side .card {
+    height: 300px;
+    margin-bottom: 5%;
+    padding: 7%;
+  }
+  .fourth-section .about-project-side .card .card-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fourth-section .about-project-side .card .card-inline .card-first-element {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .fourth-section .about-project-side .card .card-inline .card-second-element {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+  }
+  .fourth-section .about-project-side .card .card-bottom button {
+    margin-right: 30%;
+    margin-top: 5px;
+    height: 40px;
+  }
+  .fourth-section .about-project-side .card .card-content {
+    margin-top: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
